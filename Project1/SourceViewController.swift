@@ -8,13 +8,17 @@
 
 import Cocoa
 
-class SourceViewController: NSViewController {
+class SourceViewController: NSViewController, NSTableViewDataSource, NSTableViewDelegate {
 
     @IBOutlet var tableView: NSTableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
+    }
+    
+    func numberOfRows(in tableView: NSTableView) -> Int {
+        return 100
     }
     
 }
