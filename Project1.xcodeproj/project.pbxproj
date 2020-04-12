@@ -23,7 +23,7 @@
 		FA2DDA3C24436BEE0007CF98 /* nssl0043.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA2DDA3224436BEE0007CF98 /* nssl0043.jpg */; };
 		FA2DDA3D24436BEE0007CF98 /* nssl0033.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA2DDA3324436BEE0007CF98 /* nssl0033.jpg */; };
 		FA2DDA3E24436BEE0007CF98 /* nssl0034.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA2DDA3424436BEE0007CF98 /* nssl0034.jpg */; };
-		FA2DDA40244371B10007CF98 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FA2DDA3F244371B10007CF98 /* README.md */; };
+		FA2DDA422443726A0007CF98 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FA2DDA3F244371B10007CF98 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +63,7 @@
 		FA2DDA0A24436B6A0007CF98 = {
 			isa = PBXGroup;
 			children = (
+				FA2DDA3F244371B10007CF98 /* README.md */,
 				FA2DDA1524436B6A0007CF98 /* Project1 */,
 				FA2DDA1424436B6A0007CF98 /* Products */,
 			);
@@ -83,7 +84,6 @@
 				FA2DDA1824436B6A0007CF98 /* ViewController.swift */,
 				FA2DDA1A24436B6A0007CF98 /* Assets.xcassets */,
 				FA2DDA1C24436B6A0007CF98 /* Main.storyboard */,
-				FA2DDA3F244371B10007CF98 /* README.md */,
 				FA2DDA2624436BB60007CF98 /* SourceViewController.swift */,
 				FA2DDA2824436BD30007CF98 /* DetailViewController.swift */,
 				FA2DDA1F24436B6A0007CF98 /* Info.plist */,
@@ -172,7 +172,7 @@
 				FA2DDA3D24436BEE0007CF98 /* nssl0033.jpg in Resources */,
 				FA2DDA3A24436BEE0007CF98 /* nssl0041.jpg in Resources */,
 				FA2DDA3724436BEE0007CF98 /* nssl0091.jpg in Resources */,
-				FA2DDA40244371B10007CF98 /* README.md in Resources */,
+				FA2DDA422443726A0007CF98 /* README.md in Resources */,
 				FA2DDA3924436BEE0007CF98 /* nssl0051.jpg in Resources */,
 				FA2DDA1B24436B6A0007CF98 /* Assets.xcassets in Resources */,
 				FA2DDA3B24436BEE0007CF98 /* nssl0042.jpg in Resources */,
