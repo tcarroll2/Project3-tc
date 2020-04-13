@@ -89,6 +89,32 @@
                         <rect key="contentRect" x="207" y="617" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <value key="minSize" type="size" width="480" height="270"/>
+                        <toolbar key="toolbar" implicitIdentifier="B44DCAE9-915A-4C72-A081-68C9B25FD2B0" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="OgO-1A-opV">
+                            <allowedToolbarItems>
+                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="Egv-vf-HDR"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="UMG-lh-uEu"/>
+                                <toolbarItem implicitItemIdentifier="E6E6B84E-AC36-4C23-9D7B-F5C7E2D0EE9F" label="" paletteLabel="" image="NSShareTemplate" id="K1C-44-APV">
+                                    <nil key="toolTip"/>
+                                    <size key="minSize" width="47" height="25"/>
+                                    <size key="maxSize" width="47" height="25"/>
+                                    <button key="view" verticalHuggingPriority="750" id="VXb-Cc-pAs">
+                                        <rect key="frame" x="0.0" y="14" width="47" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSShareTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="DXK-pe-bhL">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="shareClicked:" target="Oky-zY-oP4" id="cWY-Ze-vaz"/>
+                                        </connections>
+                                    </button>
+                                </toolbarItem>
+                            </allowedToolbarItems>
+                            <defaultToolbarItems>
+                                <toolbarItem reference="UMG-lh-uEu"/>
+                                <toolbarItem reference="K1C-44-APV"/>
+                            </defaultToolbarItems>
+                        </toolbar>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
@@ -101,10 +127,10 @@
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--Split View Controller-->
+        <!--View Controller-->
         <scene sceneID="ceo-Pp-V69">
             <objects>
-                <splitViewController id="7s1-v9-NxN" sceneMemberID="viewController">
+                <splitViewController id="7s1-v9-NxN" customClass="ViewController" customModule="Project3" customModuleProvider="target" sceneMemberID="viewController">
                     <splitViewItems>
                         <splitViewItem id="QgH-JP-esU"/>
                         <splitViewItem id="nlh-GO-a65"/>
@@ -149,7 +175,7 @@
                                             <tableColumns>
                                                 <tableColumn width="445" minWidth="40" maxWidth="1000" id="srh-Jq-iwM">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
-                                                        <font key="font" metaFont="controlContent" size="11"/>
+                                                        <font key="font" metaFont="menu" size="11"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                     </tableHeaderCell>
@@ -164,12 +190,9 @@
                                                             <rect key="frame" x="1" y="1" width="445" height="42"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
-                                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" ambiguous="YES" id="sGi-XE-Jba">
+                                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="sGi-XE-Jba">
                                                                     <rect key="frame" x="-1" y="3" width="445" height="36"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="height" constant="80" id="7AH-zz-ES9"/>
-                                                                    </constraints>
                                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="sq5-FX-5fm">
                                                                         <font key="font" metaFont="system" size="24"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -203,10 +226,10 @@
                             </scrollView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="wys-3P-Kgq" secondAttribute="trailing" id="8nj-Va-gfn"/>
-                            <constraint firstItem="wys-3P-Kgq" firstAttribute="top" secondItem="jzN-Oj-xyp" secondAttribute="top" id="PfH-Od-Y7x"/>
-                            <constraint firstAttribute="bottom" secondItem="wys-3P-Kgq" secondAttribute="bottom" id="usq-XM-Jff"/>
-                            <constraint firstItem="wys-3P-Kgq" firstAttribute="leading" secondItem="jzN-Oj-xyp" secondAttribute="leading" id="vEP-Ys-aIv"/>
+                            <constraint firstItem="wys-3P-Kgq" firstAttribute="leading" secondItem="jzN-Oj-xyp" secondAttribute="leading" id="2ly-qf-I81"/>
+                            <constraint firstAttribute="trailing" secondItem="wys-3P-Kgq" secondAttribute="trailing" id="GSH-1Z-KNW"/>
+                            <constraint firstAttribute="bottom" secondItem="wys-3P-Kgq" secondAttribute="bottom" id="JdS-yf-7hR"/>
+                            <constraint firstItem="wys-3P-Kgq" firstAttribute="top" secondItem="jzN-Oj-xyp" secondAttribute="top" id="WZ1-2i-iGR"/>
                         </constraints>
                     </view>
                     <connections>
@@ -225,12 +248,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RRQ-Ln-wC4">
+                            <imageView horizontalHuggingPriority="249" verticalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="RRQ-Ln-wC4">
                                 <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="TdA-1v-OxB"/>
                             </imageView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="RRQ-Ln-wC4" firstAttribute="leading" secondItem="QVY-Wg-4Cy" secondAttribute="leading" id="8gE-hs-70s"/>
+                            <constraint firstAttribute="bottom" secondItem="RRQ-Ln-wC4" secondAttribute="bottom" id="9I2-oj-J4e"/>
+                            <constraint firstItem="RRQ-Ln-wC4" firstAttribute="top" secondItem="QVY-Wg-4Cy" secondAttribute="top" id="cjY-NC-j3v"/>
+                            <constraint firstAttribute="trailing" secondItem="RRQ-Ln-wC4" secondAttribute="trailing" id="w16-xy-rO9"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="RRQ-Ln-wC4" id="6ds-zC-t0s"/>
@@ -241,4 +269,7 @@
             <point key="canvasLocation" x="749" y="804"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NSShareTemplate" width="11" height="16"/>
+    </resources>
 </document>
